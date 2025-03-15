@@ -1,6 +1,7 @@
 package ma.library.services;
 
 
+import ma.library.dto.AuthorDto;
 import ma.library.entities.Author;
 import ma.library.repos.AuthorRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,9 @@ import java.util.Optional;
 public interface AuthorService {
 
 
+    Author createAuthor(AuthorDto author);
+
+    Author updateAuthor(Long id, AuthorDto author);
     Author save(Author author);
 
     List<Author> getAllAuthors();

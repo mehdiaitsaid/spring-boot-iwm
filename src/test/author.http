@@ -1,0 +1,25 @@
+### GET request to example server
+GET http://localhost:8088/api/author
+
+### Send POST request with json body
+POST http://localhost:8088/api/author
+Content-Type: application/json
+
+{
+  "name": "Karim2",
+  "bio": "AI Author2"
+}
+
+
+### Send PUT request with json body
+PUT http://localhost:8088/api/author/8
+Content-Type: application/json
+
+{
+  "name": "Karim10",
+  "bio": "AI Author19"
+}
+
+
+### DELETE request to example server
+DELETE http://localhost:8088/api/author/8
